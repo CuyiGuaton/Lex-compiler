@@ -3,10 +3,10 @@
   #include <stdio.h>
 %}
 
-/* Reglas */
+/* Definiciones */
 
 caracter [A-z0-9]+
-
+gato #
 %%
 
 __{caracter}__      printf("Negrita\n");

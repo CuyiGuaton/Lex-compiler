@@ -360,8 +360,8 @@ static void yynoreturn yy_fatal_error (yyconst char* msg  );
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 7
-#define YY_END_OF_BUFFER 8
+#define YY_NUM_RULES 3
+#define YY_END_OF_BUFFER 4
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -369,29 +369,28 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[25] =
+static yyconst flex_int16_t yy_accept[14] =
     {   0,
-        0,    0,    8,    7,    7,    7,    7,    0,    0,    0,
-        0,    1,    1,    0,    5,    6,    0,    6,    1,    0,
-        6,    3,    4,    0
+        0,    0,    4,    3,    3,    0,    0,    2,    0,    2,
+        2,    1,    0
     } ;
 
 static yyconst YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    1,    1,    1,    1,    1,
-        1,    4,    1,    1,    1,    1,    1,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    1,    1,    1,
-        1,    1,    1,    1,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    6,    5,    5,    5,    5,    5,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    2,    1,    1,    1,
+        1,    1,    1,    1,    2,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    3,    2,    2,    2,    2,    2,
 
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        5,    5,    1,    1,    1,    1,    1,    1,    1,    1,
+        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    2,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -408,39 +407,33 @@ static yyconst YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst YY_CHAR yy_meta[7] =
+static yyconst YY_CHAR yy_meta[4] =
     {   0,
-        1,    2,    1,    3,    4,    4
+        1,    1,    1
     } ;
 
-static yyconst flex_uint16_t yy_base[31] =
+static yyconst flex_uint16_t yy_base[15] =
     {   0,
-        0,    4,   33,   34,   28,    6,   28,    0,   26,   23,
-        8,    0,    0,   22,   34,    0,   16,    0,    0,    0,
-        3,   34,    0,   34,   14,   16,   20,    1,   24,    0
+        8,    7,    9,   12,    0,    5,    2,    0,    4,    0,
+        3,    0,   12,    0
     } ;
 
-static yyconst flex_int16_t yy_def[31] =
+static yyconst flex_int16_t yy_def[15] =
     {   0,
-       25,   25,   24,   24,   26,   24,   27,   28,   26,    6,
-       24,   27,   29,   28,   24,   10,   11,   17,   29,   30,
-       17,   24,   21,    0,   24,   24,   24,   24,   24,   24
+       14,   14,   13,   13,   13,    5,   13,    6,    7,    9,
+        9,   11,    0,   13
     } ;
 
-static yyconst flex_uint16_t yy_nxt[41] =
+static yyconst flex_uint16_t yy_nxt[16] =
     {   0,
-       24,   24,   22,    5,   14,    6,    7,    5,   23,    6,
-       10,   11,   17,   18,    4,    4,    4,    4,    9,    9,
-       12,   21,   12,   12,   19,   20,   19,   19,   16,   15,
-       13,    8,   24,    3,   24,   24,   24,   24,   24,   24
+        4,    6,    7,    9,   10,   12,   11,    8,   13,    5,
+        5,    3,   13,   13,   13
     } ;
 
-static yyconst flex_int16_t yy_chk[41] =
+static yyconst flex_int16_t yy_chk[16] =
     {   0,
-        0,    0,   30,    1,   28,    1,    2,    2,   21,    2,
-        6,    6,   11,   11,   25,   25,   25,   25,   26,   26,
-       27,   17,   27,   27,   29,   14,   29,   29,   10,    9,
-        7,    5,    3,   24,   24,   24,   24,   24,   24,   24
+       14,    5,    5,    7,    7,   11,    9,    6,    3,    2,
+        1,   13,   13,   13,   13
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -461,7 +454,8 @@ char *yytext;
 #line 2 "mdtolatex.l"
   #include <stdlib.h>
   #include <stdio.h>
-#line 465 "lex.yy.c"
+/* Reglas */
+#line 459 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -642,9 +636,6 @@ extern int yylex (void);
 #endif
 
 #define YY_RULE_SETUP \
-	if ( yyleng > 0 ) \
-		YY_CURRENT_BUFFER_LVALUE->yy_at_bol = \
-				(yytext[yyleng - 1] == '\n'); \
 	YY_USER_ACTION
 
 /** The main scanner function which does all the work.
@@ -682,10 +673,10 @@ YY_DECL
 		}
 
 	{
-#line 6 "mdtolatex.l"
+#line 10 "mdtolatex.l"
 
 
-#line 689 "lex.yy.c"
+#line 680 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -700,7 +691,6 @@ YY_DECL
 		yy_bp = yy_cp;
 
 		yy_current_state = (yy_start);
-		yy_current_state += YY_AT_BOL();
 yy_match:
 		do
 			{
@@ -713,13 +703,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 25 )
+				if ( yy_current_state >= 14 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 34 );
+		while ( yy_base[yy_current_state] != 12 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -745,40 +735,20 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 8 "mdtolatex.l"
-printf("h1\n") ;
+#line 12 "mdtolatex.l"
+printf("Negrita\n");
 	YY_BREAK
 case 2:
-YY_RULE_SETUP
-#line 9 "mdtolatex.l"
-printf("h2\n") ;
-	YY_BREAK
-case 3:
-YY_RULE_SETUP
-#line 10 "mdtolatex.l"
-printf("Negrita\n");
-	YY_BREAK
-case 4:
-YY_RULE_SETUP
-#line 11 "mdtolatex.l"
-printf("Negrita\n");
-	YY_BREAK
-case 5:
-YY_RULE_SETUP
-#line 12 "mdtolatex.l"
-printf("Cursiva\n");
-	YY_BREAK
-case 6:
 YY_RULE_SETUP
 #line 13 "mdtolatex.l"
 printf("Cursiva\n");
 	YY_BREAK
-case 7:
+case 3:
 YY_RULE_SETUP
 #line 14 "mdtolatex.l"
 ECHO;
 	YY_BREAK
-#line 782 "lex.yy.c"
+#line 752 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1059,7 +1029,6 @@ static int yy_get_next_buffer (void)
 	char *yy_cp;
     
 	yy_current_state = (yy_start);
-	yy_current_state += YY_AT_BOL();
 
 	for ( yy_cp = (yytext_ptr) + YY_MORE_ADJ; yy_cp < (yy_c_buf_p); ++yy_cp )
 		{
@@ -1072,7 +1041,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 25 )
+			if ( yy_current_state >= 14 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
@@ -1100,11 +1069,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 25 )
+		if ( yy_current_state >= 14 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (flex_int16_t) yy_c];
-	yy_is_jam = (yy_current_state == 24);
+	yy_is_jam = (yy_current_state == 13);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1219,8 +1188,6 @@ static int yy_get_next_buffer (void)
 	c = *(unsigned char *) (yy_c_buf_p);	/* cast for 8-bit char's */
 	*(yy_c_buf_p) = '\0';	/* preserve yytext */
 	(yy_hold_char) = *++(yy_c_buf_p);
-
-	YY_CURRENT_BUFFER_LVALUE->yy_at_bol = (c == '\n');
 
 	return c;
 }

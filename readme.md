@@ -3,10 +3,13 @@
 
 - [x] Acerca de Markdown
 - [x] Comparación Latex-Markdown
-- [ ] Análisis léxico
-  - [ ] tokens
+- [x] Análisis léxico
+  - [x] tokens
+    - [ ] Expresiones regulares
+  - [ ] Automata
+  - [ ] Codigo en C
 - [ ] Análisis sintáctico
-- [ ] Análisis semánticos
+  - [ ] Gramatica
 - [ ] Más mierda
 
 ## Acerca de Markdown
@@ -30,8 +33,20 @@ Usualmente todo texto escito en Markdown se suele compilar en HTML, un compilado
 
 |          | Latex | Markdown |
 |---------|----------|----------|
-| Negrita | \textbf{Negrita} |  `**Negrita**` |
-| Cursiva | \textit{Cursiva} | `*Cursiva*` |
+| Negrita | \textbf{Negrita} |  `__Negrita__` |
+| Cursiva | \textit{Cursiva} | `_Cursiva_` |
 | Imagen |    \includegraphics{image}             |    `  ![text](image)  `    |
 | Lista |  \begin{itemize} <br>    \item Item 1 <br>  \item Item 2 <br> \end{itemize} | `* Item 1` <br> `* Item 2` |
 | Lista Enumerada |  \begin{enumerate} <br>    \item Item 1 <br>  \item Item 2 <br> \end{enumerate} | `1. Item 1` <br> `2. Item 2` |
+
+## Análisis léxico
+
+| Token | Lexema | Expresión Regular |
+|--------|------|-------------------|
+| Id | PALABRA | [A-z0-9]+|
+| h1 | # |  ^#   |    
+| Cursi  |  _   |          |
+|  Negra |  __ |    |
+| list  |  *   |          |
+| InitImg   |  [ |       |   
+|  CloseImg  |  ] |       |   

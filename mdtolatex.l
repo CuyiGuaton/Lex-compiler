@@ -3,12 +3,12 @@
   #include <stdio.h>
 %}
 
+/* Reglas */
+
+caracter [A-z0-9]+
+
 %%
 
-^#.+ printf("h1\n") ;
-^##.+ printf("h2\n") ;
-\*\*[A-z0-9]+\*\*      printf("Negrita\n");
-__[A-z0-9]+__      printf("Negrita\n");
-\*[A-z0-9]+\*      printf("Cursiva\n");
-_[A-z0-9]+_       printf("Cursiva\n");
+__{caracter}__      printf("Negrita\n");
+_{caracter}_       printf("Cursiva\n");
 %%

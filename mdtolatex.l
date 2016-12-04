@@ -1,10 +1,12 @@
 %{
-#include <stdio.h>
+  #include <stdlib.h>
+  #include <stdio.h>
 %}
 
 %%
 
-\# printf("asdasd\n" );
+^#.+ printf("h1\n") ;
+^##.+ printf("h2\n") ;
 \*\*[A-z0-9]+\*\*      printf("Negrita\n");
 __[A-z0-9]+__      printf("Negrita\n");
 \*[A-z0-9]+\*      printf("Cursiva\n");

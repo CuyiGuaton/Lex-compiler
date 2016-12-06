@@ -47,15 +47,13 @@ Comparación
 Análisis léxico
 ---------------
 
-| Token    | Lexema  | Expresión Regular |
-|----------|---------|-------------------|
-| Id       | PALABRA | [A-z0-9]+         |
-| h1       | \#      | ^#                |
-| Cursi    | \_      |                   |
-| Negra    | \_\_    |                   |
-| list     | \*      |                   |
-| InitImg  | \[      |                   |
-| CloseImg | \]      |                   |
+| Token | Lexema  | Expresión Regular |
+|-------|---------|-------------------|
+| Id    | PALABRA | `[A-z0-9]+`       |
+| h1    | \#      | `^#[ ].+`         |
+| Cursi | \_      | `_[A-z0-9]+_`     |
+| Negra | \_\_    | `__[A-z0-9]+__`   |
+| list  | \*      | `^*[ ].+`         |
 
 ### Automata
 

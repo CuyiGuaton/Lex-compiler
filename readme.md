@@ -1,7 +1,11 @@
 Markdown To Latex
 =================
 
+Para compilar
+
+`flex mdtotex.l && cc lex.yy.c -ll && ./a.out `
 ---
+
 
 -	[x] Acerca de Markdown
 -	[x] Comparación Latex-Markdown
@@ -13,7 +17,6 @@ Markdown To Latex
 	-	[x] Codigo en C
 -	[x] Análisis sintáctico
 	-	[x] Gramatica
-	-	[ ] árbol
 -	[ ] Imagen de un cuyi
 
 Acerca de Markdown

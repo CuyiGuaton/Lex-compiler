@@ -5,14 +5,15 @@ Markdown To Latex
 
 -	[x] Acerca de Markdown
 -	[x] Comparación Latex-Markdown
-	-	[ ] Imagenes paraleras de codigo
+	-	[x] Imagenes paraleras de codigo
 -	[x] Análisis léxico
 	-	[x] tokens
-	-	[ ] Expresiones regulares
+	-	[x] Expresiones regulares
 	-	[x] Automata
-	-	[ ] Codigo en C
--	[ ] Análisis sintáctico
+	-	[x] Codigo en C
+-	[x] Análisis sintáctico
 	-	[x] Gramatica
+	-	[ ] árbol
 -	[ ] Imagen de un cuyi
 
 Acerca de Markdown
@@ -70,9 +71,10 @@ Análisis Sintactico
 
 La gramatica libre de contexto es:
 
-A-> h1 | h2 | h3 | N | C h1 -> # B  
-h2 -> ## B  
-h3 -> ### B  
-N -> `_BB`  
-C -> `__BB__`  
-B -> a|b|...|z|0|...|9|ε
+A-> h1 | h2 | h3 | N | C | B | A | \n  
+h1 -> # \s B \n  
+h2 -> ## \s B \n  
+h3 -> ### \s B \n  
+N -> `_B_`A  
+C -> `__B__`A  
+B -> a|b|...|z|0|...|9|BB|

@@ -10,12 +10,12 @@
 \usepackage[spanish]{babel}
 \usepackage{tikz}
 \usepackage{graphicx}
-%\author{}
-%\title{}
+\author{Sergio Salinas}
+\title{MarkDown a Latex}
 %\\setbeamercovered{transparent}
 %\\setbeamertemplate{navigation symbols}{}
 %\logo{}
-%\institute{}
+\institute{Universidad Santiago de Chile}
 %\date{}
 %\\subject{}
 \begin{document}
@@ -91,14 +91,16 @@ Text attributes \emph{italic}, \textbf{bold}.
 
 \section{Análisis léxico}
 
-\begin{frame}{Análisis léxico}
+\subsection{Tabla de tokens}
+
+\begin{frame}{Análisis léxico}{Tabla de tokens}
 
 \begin{center}
 \includegraphics[scale=0.7]{imagenes/lex.png} 
 \end{center}
 \end{frame}
 
-
+\subsection{Automatas}
 
 \begin{frame}[fragile]{Automata para las cabeceras}
 \begin{center}
@@ -201,12 +203,29 @@ Text attributes \emph{italic}, \textbf{bold}.
 \end{center}
 \end{frame}
 
+\subsection{Código en C}
+
 \begin{frame}[fragile]{Código en C}
 
 \begin{center}
 \includegraphics[scale=0.55]{imagenes/code.png} 
 
 \end{center}
+\end{frame}
+
+
+\section{Análisis sintactico}
+
+\begin{frame}[fragile]{Análisis sintactico}{Su gramatica libre de contexto es}
+\begin{minted}{python}
+A-> h1 | h2 | h3 | N | C | B | A | \n
+h1 -> # \s B \n A
+h2 -> ## \s B \n A
+h3 -> ### \s B \n A
+N -> _B_A
+C -> __B__A
+B -> a|b|...|z|0|...|9|\t|BB|
+\end{minted}
 \end{frame}
 
 \end{document}

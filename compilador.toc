@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\select@language {spanish}
-\beamer@sectionintoc {1}{Acerca de MarkDown}{3}{0}{1}
-\beamer@sectionintoc {2}{Comparaci\IeC {\'o}n entre Latex y Markdown}{4}{0}{2}
-\beamer@sectionintoc {3}{An\IeC {\'a}lisis l\IeC {\'e}xico}{7}{0}{3}

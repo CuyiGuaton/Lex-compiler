@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Heading\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}subsection}\PYG{n+nb}{\PYGZob{}}Sub\PYGZhy{}heading\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}subsubsection}\PYG{n+nb}{\PYGZob{}}Another deeper heading\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}}
+
+Text attributes \PYG{k}{\PYGZbs{}emph}\PYG{n+nb}{\PYGZob{}}italic\PYG{n+nb}{\PYGZcb{}}, \PYG{k}{\PYGZbs{}textbf}\PYG{n+nb}{\PYGZob{}}bold\PYG{n+nb}{\PYGZcb{}}.
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Heading}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} Sub\PYGZhy{}heading}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{} Another deeper heading}
+
+\PYG{n}{Text} \PYG{n}{attributes} \PYG{n}{\PYGZus{}italic\PYGZus{}}\PYG{p}{,} \PYG{n}{\PYGZus{}\PYGZus{}bold\PYGZus{}\PYGZus{}}\PYG{o}{.}
+\end{Verbatim}

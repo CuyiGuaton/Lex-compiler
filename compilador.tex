@@ -5,8 +5,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{listings}
-\usepackage{verbatim}
+\usepackage{minted}
+
 \usepackage[spanish]{babel}
 \usepackage{tikz}
 \usepackage{graphicx}
@@ -43,6 +43,48 @@ Usualmente todo texto escito en Markdown se suele compilar en HTML, un compilado
 \includegraphics[scale=0.8]{imagenes/com.png} 
 \end{center}
 \end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+
+\textbf{Codigo en markdown}
+
+%\includegraphics[scale=.7]{imagenes/la.png} \\
+
+\begin{minted}{python}
+# Heading
+## Sub-heading
+### Another deeper heading
+ 
+Text attributes _italic_, __bold__.
+
+\end{minted}
+
+
+\vspace{1cm}
+\textbf{Codigo en \LaTeX}
+%\includegraphics[scale=.7]{imagenes/md.png} 
+
+\begin{minted}{latex}
+\section{Heading}
+\subsection{Sub-heading}
+\subsubsection{Another deeper heading}\
+
+Text attributes \emph{italic}, \textbf{bold}.
+
+\end{minted}
+
+
+
+\end{frame}
+
+
 
 \begin{frame}[fragile]{Automata para las cabeceras}
 \begin{center}

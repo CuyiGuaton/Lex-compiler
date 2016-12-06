@@ -3,13 +3,14 @@
 
 - [x] Acerca de Markdown
 - [x] Comparación Latex-Markdown
+  - [ ] Imagenes paraleras de codigo
 - [x] Análisis léxico
   - [x] tokens
     - [ ] Expresiones regulares
-  - [ ] Automata
+  - [x] Automata
   - [ ] Codigo en C
 - [ ] Análisis sintáctico
-  - [ ] Gramatica
+  - [x] Gramatica
 - [ ] Más mierda
 
 ## Acerca de Markdown
@@ -50,3 +51,27 @@ Usualmente todo texto escito en Markdown se suele compilar en HTML, un compilado
 | list  |  *   |          |
 | InitImg   |  [ |       |   
 |  CloseImg  |  ] |       |   
+
+### Automata
+
+#### Automata para las cabeceras
+
+![](imagenes/automata1.png)
+
+#### Automata para la negrita y la cursiva
+
+![](imagenes/automata2.png)
+  ```
+
+# Análisis Sintactico
+
+La gramatica libre de contexto es:
+
+
+A-> h1 | h2 | h3  | N | C
+h1 -> # B  
+h2 -> ## B  
+h3 -> ### B  
+N -> `_BB `  
+C -> `__BB__`  
+B -> a|b|...|z|0|...|9|ε  

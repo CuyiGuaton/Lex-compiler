@@ -14,6 +14,7 @@ yywrap(void)
 "__"     return NEGRA;
 
 "\n"     return CR;
+
 [0-9A-Za-z_,\-\.:/]+ {
     char* temp;
     int len = strlen(yytext);
